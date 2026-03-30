@@ -1,0 +1,132 @@
+.btn-modern {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-out);
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  letter-spacing: 0.3px;
+}
+
+.btn-modern::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-modern:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-modern-primary {
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-modern-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-modern-secondary {
+  background: var(--gray-800);
+  color: white;
+}
+
+.btn-modern-secondary:hover:not(:disabled) {
+  background: var(--gray-900);
+  transform: translateY(-2px);
+}
+
+.btn-modern-outline {
+  background: transparent;
+  border: 2px solid #D8ABB7;
+  color: #D8ABB7;
+}
+
+.btn-modern-outline:hover:not(:disabled) {
+  background: #D8ABB7;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-modern-danger {
+  color: white;
+}
+
+.btn-modern-danger:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-modern-success {
+  color: white;
+}
+
+.btn-modern-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  gap: 0.375rem;
+}
+
+.btn-modern-md {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  gap: 0.5rem;
+}
+
+.btn-modern-lg {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  gap: 0.75rem;
+}
+
+.btn-modern-full {
+  width: 100%;
+}
+
+.btn-modern-loading {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.btn-spinner {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-modern:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.btn-text {
+  position: relative;
+  z-index: 1;
+}

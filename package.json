@@ -1,33 +1,25 @@
-{
-  "name": "financial-health-app",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "description": "A comprehensive financial health application with assessment, dashboard, rewards, and reporting features",
-  "author": "FinHealth",
-  "license": "MIT",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0",
-    "react-icons": "^4.12.0",
-    "qrcode": "^1.5.3",
-    "react-qr-code": "^2.0.12"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.0.8",
-    "eslint": "^8.55.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5"
-  }
-}
+# Financial Health App - Dependencies
+
+# Core React Dependencies
+react==18.2.0
+react-dom==18.2.0
+react-router-dom==6.20.0
+
+# UI Icons
+react-icons==4.12.0
+
+# QR Code Generation
+qrcode==1.5.3
+react-qr-code==2.0.12
+
+# Build Tools
+vite==5.0.8
+@vitejs/plugin-react==4.2.1
+
+# Development Dependencies
+@types/react==18.2.43
+@types/react-dom==18.2.17
+eslint==8.55.0
+eslint-plugin-react==7.33.2
+eslint-plugin-react-hooks==4.6.0
+eslint-plugin-react-refresh==0.4.5
